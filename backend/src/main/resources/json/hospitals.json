@@ -1,0 +1,263 @@
+[
+  {
+    "name": "Bệnh Viện Hữu Nghị Việt Đức",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hà Nội",
+      "district": "Hoàn Kiếm",
+      "ward": "Hàng Bông",
+      "address": "Số 18 Phủ Doãn"
+    },
+    "info": "Bệnh viện Hữu Nghị Việt Đức là một trong 5 bệnh viện tuyến trung ương hạng đặc biệt hàng đầu của Việt Nam. Tọa lạc giữa trung tâm thủ đô Hà Nội, có nhiều cổng nằm trên các mặt đường Tràng Thi, Phủ Doãn, Quán Sứ thuộc quận Hoàn Kiếm, Thành phố Hà Nội.",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-viet-duc-isofhcare2-(1)_03053edd_8673_4b36_8237_2c214b3f1c28.jpg",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/dat-lich-kham-benh-vien-huu-nghi-viet-duc-isofhcare-jpg_807244c9_8d1c_4d52_872b_6a2c8873f56c.png",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "Bệnh Viện Phổi Trung Ương",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hà Nội",
+      "district": "Ba Đình",
+      "ward": "Vĩnh Phúc",
+      "address": "463 Đường Hoàng Hoa Thám"
+    },
+    "info": "Không chỉ có vai trò thăm khám và điều trị các trường hợp lao phổi, bệnh viện Phổi Trung ương còn là một đơn vị thường trực điều hành chuyên hợp tác cùng các tổ chức quốc tế trong những dự án vì cộng đồng như: Phòng chống bệnh lao phổi cho cộng đồng, phòng chống bệnh nhiễm khuẩn hô hấp thể cấp tính ở trẻ em.",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-phoi-trung-uong-ivie_2c9ee588_ecde_481f_bf24_3cfc91a1c646.jpg",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/dat-lich-kham-tai-benh-vien-phoi-trung-uong-isofhcare-(1)-jpg_9da75431_0c05_41e7_bc82_570736e61679.png",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "Tổ Hợp Phòng Khám Mediplus",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hà Nội",
+      "district": "Hoàng Mai",
+      "ward": "99 Tân Mai",
+      "address": "Tầng 2, TTTM Mandarin Garden 2"
+    },
+    "info": "Không chỉ có vai trò thăm khám và điều trị các trường hợp lao phổi, bệnh viện Phổi Trung ương còn là một đơn vị thường trực điều hành chuyên hợp tác cùng các tổ chức quốc tế trong những dự án vì cộng đồng như: Phòng chống bệnh lao phổi cho cộng đồng, phòng chống bệnh nhiễm khuẩn hô hấp thể cấp tính ở trẻ em.",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-phoi-trung-uong-ivie_2c9ee588_ecde_481f_bf24_3cfc91a1c646.jpg",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/dat-lich-kham-tai-phong-kham-mediplus-hoang-mai-ha-noi-isofhcare-jpg_2dfe6c3c_f5da_413b_a2a1_5a838c818272.png",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "Bác Sĩ Ơi - Phòng Khám 020",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hà Nội",
+      "district": "Hoàng Mai",
+      "ward": "99 Tân Mai",
+      "address": "Phòng B19 - Tổ hợp Y tế Chất lượng cao Mediplus"
+    },
+    "info": "\"BÁC SĨ ƠI!\" là một chiến dịch nhân văn, hướng đến giúp đỡ các đối tượng F0, F1 đang tự cách ly y tế hoặc đang ở trong khu vực bị phong tỏa và người dân cả nước bị ảnh hưởng bởi dịch COVID-19.",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-phoi-trung-uong-ivie_2c9ee588_ecde_481f_bf24_3cfc91a1c646.jpg",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/kham-benh-truc-tuyen-bac-si-online-isofhcare-jpg_df497467_ede9_45fb_bc20_a213568cd24f.png",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "Trung Tâm Trị Liệu Phục Hồi Chức Năng MYREHAB",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hà Nội",
+      "district": "Đống Đa",
+      "ward": "Trung Tự",
+      "address": "Tầng 2 toà nhà Coninco - Số 4 Tôn Thất Tùng"
+    },
+    "info": "Trung tâm trị liệu phục hồi chức năng MyRehab là một trong những trung tâm trị liệu phục hồi chức năng tốt nhất tại Hà Nội, được kiểm soát chuyên môn bởi các giáo sư đầu ngành, kỹ thuật viên lành nghề chuyên ngành phục hồi chức năng đến từ các bệnh viện lớn. Cá nhân hóa liệu trình điều trị bằng các bài tập trị liệu chuyên biệt hiệu quả cho từng người bệnh. Cơ sở vật chất khang trang, thiết bị mới, hiện đại đến từ các nước Âu - Mỹ. ",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-phoi-trung-uong-ivie_2c9ee588_ecde_481f_bf24_3cfc91a1c646.jpg",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/dat-lich-tri-lieu-phuc-hoi-chuc-nnag-myrehab-isofhcare-jpg_e72e0b1d_02da_4407_a1a7_4ac1445fbbdf.png",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "GENLAB - Viện Công Nghệ Gen Và Phân Tích Di Truyền",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hà Nội",
+      "district": "Cầu Giấy",
+      "ward": "Yên Hoà",
+      "address": "Tầng 1, Tòa nhà F5, số 112A Trung Kính"
+    },
+    "info": "Trung tâm trị liệu phục hồi chức năng MyRehab là một trong những trung tâm trị liệu phục hồi chức năng tốt nhất tại Hà Nội, được kiểm soát chuyên môn bởi các giáo sư đầu ngành, kỹ thuật viên lành nghề chuyên ngành phục hồi chức năng đến từ các bệnh viện lớn. Cá nhân hóa liệu trình điều trị bằng các bài tập trị liệu chuyên biệt hiệu quả cho từng người bệnh. Cơ sở vật chất khang trang, thiết bị mới, hiện đại đến từ các nước Âu - Mỹ. ",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-phoi-trung-uong-ivie_2c9ee588_ecde_481f_bf24_3cfc91a1c646.jpg",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/xet-nghiem-gen-tai-genlab-ivie-(1)_85867580_d866_4fb7_931f_ac1534620042.png",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "Bệnh Viện E",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hà Nội",
+      "district": "Cầu Giấy",
+      "ward": "Nghĩa Tân",
+      "address": "Số 87 - 89 Trần Cung"
+    },
+    "info": "Bệnh viện E là bệnh viện đa khoa hạng I trực thuộc Bộ Y tế, được thành lập từ năm 1967, tọa lạc trên mặt đường Trần Cung, Nghĩa Tân, Cầu Giấy, Hà Nội. Bệnh viện có khuôn viên rộng rãi (diện tích 41.000 m2), thoáng mát, xanh, sạch, đẹp cùng dịch vụ chăm sóc người bệnh nhiệt tình.",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-e-isofhcare-jpg_e44333b5_003d_4680_81bc_ae8998949166.png",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/dat-lich-kham-tai-benh-vien-e-isofhcare-jpg_d9020a57_aeae_4bde_950a_3cbc5e0f0000.png",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "Bệnh Viện Thẩm Mỹ Gangwhoo",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hồ Chí Minh",
+      "district": "Tân Bình",
+      "ward": "Phường 13",
+      "address": "576-578 Cộng Hòa"
+    },
+    "info": "Bệnh viện thẩm mỹ Gangwhoo là bệnh viện quy tụ nhiều bác sĩ thẩm mỹ hàng đầu Việt – Hàn. Bệnh viện thẩm mỹ Gangwhoo đầu tư cơ sở vật chất khang trang và trang thiết bị hiện đại nhập từ các nước có nền thẩm mỹ phát triển như Hàn Quốc, Đức, Mỹ,…",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-e-isofhcare-jpg_e44333b5_003d_4680_81bc_ae8998949166.png",
+    "imageUrl": "https://cdn.bcare.vn/resize_165x165/2022/09/05/benh-vien-tham-my-gangwhoo-1_05092022113258.jpg",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  },
+  {
+    "name": "Bệnh Viện VINMEC",
+    "address": {
+      "country": "Việt Nam",
+      "province": "Hồ Chí Minh",
+      "district": "Bình Thạnh",
+      "ward": "Phường 22",
+      "address": "208 Nguyễn Hữu Cảnh"
+    },
+    "info": "Vinmec là Hệ thống y tế hàn lâm do Vingroup - Tập đoàn kinh tế tư nhân hàng đầu Việt Nam đầu tư phát triển với sứ mệnh \"Chăm sóc bằng tài năng, y đức và sự thấu cảm\".\nKế thừa uy tín và chất lượng vượt trội của thương hiệu Y tế Vinmec, Bệnh viện Đa khoa Quốc tế Vinmec Central Park là bệnh viện thứ 3 trong hệ thống chính thức đi vào hoạt động. Với tổng nguồn vốn hơn 1.200 tỷ đồng, Vinmec Central Park được xây dựng trong khuôn viên có diện tích mặt bằng rộng 38.643 m2, với 7 tầng nổi, 3 tầng hầm, quy mô 178 giường, 16 chuyên khoa cùng một số trung tâm hỗ trợ chuyên ngành. Toàn bộ hệ thống hoạt động đều được đầu tư các trang thiết bị hiện đại, cao cấp nhất theo tiêu chuẩn quốc tế.",
+    "mapImageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/so-do-benh-vien-e-isofhcare-jpg_e44333b5_003d_4680_81bc_ae8998949166.png",
+    "imageUrl": "https://khamdinhkydanang.com/wp-content/uploads/2019/09/Vinmec-Nha-Trang-1024x614.jpg",
+    "hospitalHour": {
+      "mondayTime": "7:00 - 17:00",
+      "mondayTimeBreak": "12:00 - 13:00",
+      "tuesdayTime": "7:00 - 17:00",
+      "tuesdayTimeBreak": "12:00 - 13:00",
+      "wednesdayTime": "7:00 - 17:00",
+      "wednesdayTimeBreak": "12:00 - 13:00",
+      "thursdayTime": "7:00 - 17:00",
+      "thursdayTimeBreak": "12:00 - 13:00",
+      "fridayTime": "7:00 - 17:00",
+      "fridayTimeBreak": "12:00 - 13:00",
+      "saturdayTime": "7:00 - 17:00",
+      "saturdayTimeBreak": "12:00 - 13:00",
+      "sundayTime": "7:00 - 17:00",
+      "sundayTimeBreak": "12:00 - 13:00"
+    }
+  }
+]

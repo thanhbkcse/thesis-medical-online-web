@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Gói tầm soát viêm gan B, C - Tổ hợp Y tế MEDIPLUS",
+    "info": "CHI TIẾT DỊCH VỤ\nDịch vụ Gói tầm soát viêm gan B, C - Tổ hợp Y tế MEDIPLUS, bao gồm các hạng mục thăm khám:\n1. Khám sàng lọc\n2. Xét nghiệm\n- Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser) \n- Định lượng Glucose [Máu]\n- Định lượng Cholesterol toàn phần [Máu]\n- Định lượng Triglycerid [Máu]\n- Đo hoạt độ AST (GOT) [Máu]\n- Đo hoạt độ ALT (GPT) [Máu]\n- Đo hoạt độ GGT (Gama Glutamyl Transferase) [Máu] [Gama GT]\n- Định lượng Bilirubin toàn phần [Máu]\n- Định lượng Bilirubin trực tiếp [Máu]\n- Định lượng Albumin [Máu]\n- Định lượng Protein toàn phần [Máu]\n- Định lượng AFP (Alpha Fetoproteine) [Máu]\n- HBsAg miễn dịch tự động [HBsAg Cobas]\n- HBsAb định lượng miễn dịch tự động\n- HCV Ab test nhanh\n- HCV Ab miễn dịch tự động\n- Tổng phân tích nước tiểu (Bằng máy tự động) [10 thông số]\n3. Chẩn đoán hình ảnh\n- Siêu âm ổ bụng tổng quát\n\n- Địa điểm tiếp đón và thăm khám: 99 Tân Mai, Hoàng Mai, Hà Nội\n- Thời gian làm việc: 7h30 - 12h00; 13h00 - 18h00\n- Tổng đài tư vấn: 1900 638 367\n\n- Khách hàng đặt khám với IVIE, sẽ được đón tiếp ưu tiên và đúng giờ, không mất thời gian chờ đợi.\n- Đặt lịch thành công trên hệ thống của IVIE, khách hàng sẽ nhận được tin nhắn xác nhận lịch thành công. \n- Đăng ký khám trên IVIE, khách hàng không chỉ được lựa chọn dịch vụ và bác sĩ khám phù hợp theo nhu cầu, sau khám bệnh nhân được tư vấn theo dõi hồ sơ sức khoẻ và nhắc lịch tái khám cho những lần sau. ",
+    "price": 2600000,
+    "specialty": "TIEU_HOA_GAN_MAT",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/gan-jpg_bed52ed6_e87b_46f3_854b_fd73080e022b.png",
+    "hospitalId": null,
+    "hospitalName": "Tổ Hợp Phòng Khám Mediplus",
+    "numOfServicePerHour": 2,
+    "type": "OFFLINE"
+  },
+  {
+    "name": "Test Nhanh Covid tại Tổ hợp Y tế MEDIPLUS",
+    "info": "CHI TIẾT DỊCH VỤ\nGói Dịch vụ Khám và Xét nghiệm Sars-CoV-2 - Test Nhanh tại Phòng Khám\n\n- Phạm vi áp dụng : Khách hàng đến xét nghiệm tại phòng khám \n- Chi phí xét nghiệm tại phòng khám : 180.000đ/ người / lần\n- Thời gian làm việc : 8h - 18h30 các ngày từ Thứ 2 đến Chủ nhật hàng tuần \n- Thời gian nhận kết quả : Sau 30 phút kể từ khi lấy mẫu xét nghiệm\n- Lưu ý : \nPhòng khám không tiếp nhận các trưởng hợp có yếu tố dịch tễ tiếp xúc với người bị nhiễm, nghi nhiễm covid, đến địa điểm có F0, là đối tượng F cách ly tại nhà..) có triệu chứng Ho, sốt, khó thở . \nXin vui lòng liên hệ y tế xã phường để được hỗ trợ. ",
+    "price": 180000,
+    "specialty": "PHOI",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/8b071904846f409ca943de6dc43f9545-jpg_7e3f8efd_b1c5_4d41_bb7c_f7874ec4818f.png",
+    "hospitalId": null,
+    "hospitalName": "Tổ Hợp Phòng Khám Mediplus",
+    "numOfServicePerHour": 2,
+    "type": "OFFLINE"
+  },
+  {
+    "name": "Xét nghiệm PCR Covid mẫu đơn- Phòng khám MEDIPLUS",
+    "info": "CHI TIẾT DỊCH VỤ\n- Phạm vi lấy mẫu: tại phòng khám và tại nhà\n- Chi phí xét nghiệm: \n+ Đối với người việt : 530.000đ/ mẫu đơn \n+ Đối với người nước ngoài: 690.000đ/ mẫu đơn\n(Đối với xét nghiệm mẫu đơn từ 6 người trở lên, vui lòng liên hệ ISOFHCARE để được chi phí ưu đãi)\n- Chi phí di chuyển lấy mẫu tại nhà:\n+ Trong 5km đầu tiên: 200.000đ, từ km thứ 6 cộng thêm 30.000đ/ km\n- Thời gian trả kết quả: trong vòng 24h\n- Thời gian làm việc : 7h30 - 18h tất cả các ngày trong tuần\n",
+    "price": 560000,
+    "specialty": "PHOI",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/xet-nghiem-covid-19_6eaa4a3b_62cc_4b62_a847_1e53d79b61ef-jpg_684f6d34_0934_46e3_bf36_9f8e33a527f2.png",
+    "hospitalId": null,
+    "hospitalName": "Tổ Hợp Phòng Khám Mediplus",
+    "numOfServicePerHour": 2,
+    "type": "OFFLINE"
+  },
+  {
+    "name": "Khám TYC&QT-Chuyên khoa Nội tim mạch",
+    "info": "CHI TIẾT DỊCH VỤ\nKhám Tự Nguyện\n\nKhám Nội tim mạch tại Khoa Theo yêu cầu và Quốc tế tại Bệnh viện E. \n\nKhoa Khám chữa bệnh Theo yêu cầu & Quốc tế Bệnh viện E có cơ sở vật chất khang trang, hiện đại, đội ngũ bác sĩ chuyên môn cao, giàu kinh nghiệm, thực hiện Khám chữa bệnh đa khoa với mức chi phí hợp lý. Quy trình khám nhanh chóng, người bệnh đặt lịch trước sẽ được ưu tiên tiếp đón đúng hẹn.\n\n- Thời gian làm việc: 07h00 đến 16h30 thứ 2 đến thứ 6\n- Địa chỉ: Nhà E tầng 2, 89 Trần Cung, Nghĩa Tân, Cầu Giấy, Hà Nội\n- Tổng đài tư vấn và đặt lịch khám: 1900 638 367\n\nKhám, sàng lọc và điều trị các bệnh Nội tim mạch là một trong những dịch vụ thế mạnh tại khoa. Bác sĩ tim mạch tiêu biểu như:\n- Giáo sư, Tiến sĩ, Thầy thuốc nhân dân Lê Ngọc Thành - Chuyên gia đầu ngành về phẫu thuật tim mạch và lồng ngực, Chủ tịch Hội phẫu thuật tim mạch và lồng ngực Việt Nam;\n- Cùng các chuyên gia, bác sĩ giỏi giàu kinh nghiệm cũng hợp tác khám chữa bệnh tại khoa.\n\nCác bệnh tim mạch thường gặp bao gồm: Tăng huyết áp, suy tim, tai biến mạch máu não, thiếu máu cơ tim mãn tính, hở van hai lá... \n\nTriệu chứng của bệnh tim mạch rất đa dạng như: \n- Khó thở\n- Đau tức ngực\n- Tim đập nhanh\n- Các cơn đau co bóp ở tim...\nKhi thấy bất cứ dấu hiệu nào bất thường, cần đến ngay bệnh viện để được thăm khám và điều trị kịp thời.\n\nNgười bệnh đăng ký dịch vụ sẽ nhận được tin nhắn đặt lịch thành công qua số điện thoại, người bệnh đặt lịch trước được ưu tiên tiếp đón đúng hẹn, giảm thời gian xếp hàng, chờ đợi.\n\nTham khảo quy trình khám để có buổi khám bệnh nhanh chóng, thuận lợi nhất.",
+    "price": 350000,
+    "specialty": "TIM_MACH",
+    "imageUrl": "https://isofhcare-backup.s3-ap-southeast-1.amazonaws.com/images/chuyen-khoa-tim-mach-phong-kham-thu-cuc-min-600x339-jpg_90d4708a_0a07_4793_afbb_6d143abfa50f.png",
+    "hospitalId": null,
+    "hospitalName": "Bệnh Viện E",
+    "numOfServicePerHour": 2,
+    "type": "OFFLINE"
+  }
+]
