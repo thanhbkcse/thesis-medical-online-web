@@ -266,7 +266,12 @@ import axios from "axios";
 export default {
   async created() {
     this.getProvines();
-    await this.get_hospital_list();
+    if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+      this.logindev();
+    }
+    else{
+      await this.get_hospital_list();
+    }
     this.loading = false;
   },
 
@@ -410,6 +415,186 @@ export default {
       } else {
         return require("@/assets/img/home/hospital_avt.png");
       }
+    },
+
+    logindev(){
+      this.hospital_list = [
+        {
+            "id": "1",
+            "name": "Bệnh viện Hữu Nghị Việt Đức",
+            "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+            },
+            "info": "Bệnh viện Hữu Nghị Việt Đức là một trong 5 bệnh viện tuyến trung ương hạng đặc biệt hàng đầu của Việt Nam. Tọa lạc giữa trung tâm thủ đô Hà Nội, có nhiều cổng nằm trên các mặt đường Tràng Thi, Phủ Doãn, Quán Sứ thuộc quận Hoàn Kiếm, Thành phố Hà Nội.",
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "mapImageUrl": null,
+            "imageUrl": null,
+            "isActive": true,
+            "hospitalHour": {
+                "id": "980afcb5-8c89-4df7-bc16-8dd55dadd9e5",
+                "mondayTime": "7:00 - 17:00",
+                "mondayTimeBreak": "12:00 - 13:00",
+                "tuesdayTime": "7:00 - 17:00",
+                "tuesdayTimeBreak": "12:00 - 13:00",
+                "wednesdayTime": "7:00 - 17:00",
+                "wednesdayTimeBreak": "12:00 - 13:00",
+                "thursdayTime": "7:00 - 17:00",
+                "thursdayTimeBreak": "12:00 - 13:00",
+                "fridayTime": "7:00 - 17:00",
+                "fridayTimeBreak": "12:00 - 13:00",
+                "saturdayTime": "7:00 - 17:00",
+                "saturdayTimeBreak": "12:00 - 13:00",
+                "sundayTime": "7:00 - 17:00",
+                "sundayTimeBreak": "12:00 - 13:00"
+            }
+        },
+        {
+            "id": "2",
+            "name": "Bệnh viện Hữu Nghị Việt Đức",
+            "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+            },
+            "info": "Bệnh viện Hữu Nghị Việt Đức là một trong 5 bệnh viện tuyến trung ương hạng đặc biệt hàng đầu của Việt Nam. Tọa lạc giữa trung tâm thủ đô Hà Nội, có nhiều cổng nằm trên các mặt đường Tràng Thi, Phủ Doãn, Quán Sứ thuộc quận Hoàn Kiếm, Thành phố Hà Nội.",
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "mapImageUrl": null,
+            "imageUrl": null,
+            "isActive": true,
+            "hospitalHour": {
+                "id": "980afcb5-8c89-4df7-bc16-8dd55dadd9e5",
+                "mondayTime": "7:00 - 17:00",
+                "mondayTimeBreak": "12:00 - 13:00",
+                "tuesdayTime": "7:00 - 17:00",
+                "tuesdayTimeBreak": "12:00 - 13:00",
+                "wednesdayTime": "7:00 - 17:00",
+                "wednesdayTimeBreak": "12:00 - 13:00",
+                "thursdayTime": "7:00 - 17:00",
+                "thursdayTimeBreak": "12:00 - 13:00",
+                "fridayTime": "7:00 - 17:00",
+                "fridayTimeBreak": "12:00 - 13:00",
+                "saturdayTime": "7:00 - 17:00",
+                "saturdayTimeBreak": "12:00 - 13:00",
+                "sundayTime": "7:00 - 17:00",
+                "sundayTimeBreak": "12:00 - 13:00"
+            }
+        },
+                {
+            "id": "3",
+            "name": "Bệnh viện Hữu Nghị Việt Đức",
+            "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+            },
+            "info": "Bệnh viện Hữu Nghị Việt Đức là một trong 5 bệnh viện tuyến trung ương hạng đặc biệt hàng đầu của Việt Nam. Tọa lạc giữa trung tâm thủ đô Hà Nội, có nhiều cổng nằm trên các mặt đường Tràng Thi, Phủ Doãn, Quán Sứ thuộc quận Hoàn Kiếm, Thành phố Hà Nội.",
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "mapImageUrl": null,
+            "imageUrl": null,
+            "isActive": true,
+            "hospitalHour": {
+                "id": "980afcb5-8c89-4df7-bc16-8dd55dadd9e5",
+                "mondayTime": "7:00 - 17:00",
+                "mondayTimeBreak": "12:00 - 13:00",
+                "tuesdayTime": "7:00 - 17:00",
+                "tuesdayTimeBreak": "12:00 - 13:00",
+                "wednesdayTime": "7:00 - 17:00",
+                "wednesdayTimeBreak": "12:00 - 13:00",
+                "thursdayTime": "7:00 - 17:00",
+                "thursdayTimeBreak": "12:00 - 13:00",
+                "fridayTime": "7:00 - 17:00",
+                "fridayTimeBreak": "12:00 - 13:00",
+                "saturdayTime": "7:00 - 17:00",
+                "saturdayTimeBreak": "12:00 - 13:00",
+                "sundayTime": "7:00 - 17:00",
+                "sundayTimeBreak": "12:00 - 13:00"
+            }
+        },
+                {
+            "id": "4",
+            "name": "Bệnh viện Hữu Nghị Việt Đức",
+            "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+            },
+            "info": "Bệnh viện Hữu Nghị Việt Đức là một trong 5 bệnh viện tuyến trung ương hạng đặc biệt hàng đầu của Việt Nam. Tọa lạc giữa trung tâm thủ đô Hà Nội, có nhiều cổng nằm trên các mặt đường Tràng Thi, Phủ Doãn, Quán Sứ thuộc quận Hoàn Kiếm, Thành phố Hà Nội.",
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "mapImageUrl": null,
+            "imageUrl": null,
+            "isActive": true,
+            "hospitalHour": {
+                "id": "980afcb5-8c89-4df7-bc16-8dd55dadd9e5",
+                "mondayTime": "7:00 - 17:00",
+                "mondayTimeBreak": "12:00 - 13:00",
+                "tuesdayTime": "7:00 - 17:00",
+                "tuesdayTimeBreak": "12:00 - 13:00",
+                "wednesdayTime": "7:00 - 17:00",
+                "wednesdayTimeBreak": "12:00 - 13:00",
+                "thursdayTime": "7:00 - 17:00",
+                "thursdayTimeBreak": "12:00 - 13:00",
+                "fridayTime": "7:00 - 17:00",
+                "fridayTimeBreak": "12:00 - 13:00",
+                "saturdayTime": "7:00 - 17:00",
+                "saturdayTimeBreak": "12:00 - 13:00",
+                "sundayTime": "7:00 - 17:00",
+                "sundayTimeBreak": "12:00 - 13:00"
+            }
+        },
+                {
+            "id": "5",
+            "name": "Bệnh viện Hữu Nghị Việt Đức",
+            "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+            },
+            "info": "Bệnh viện Hữu Nghị Việt Đức là một trong 5 bệnh viện tuyến trung ương hạng đặc biệt hàng đầu của Việt Nam. Tọa lạc giữa trung tâm thủ đô Hà Nội, có nhiều cổng nằm trên các mặt đường Tràng Thi, Phủ Doãn, Quán Sứ thuộc quận Hoàn Kiếm, Thành phố Hà Nội.",
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "mapImageUrl": null,
+            "imageUrl": null,
+            "isActive": true,
+            "hospitalHour": {
+                "id": "980afcb5-8c89-4df7-bc16-8dd55dadd9e5",
+                "mondayTime": "7:00 - 17:00",
+                "mondayTimeBreak": "12:00 - 13:00",
+                "tuesdayTime": "7:00 - 17:00",
+                "tuesdayTimeBreak": "12:00 - 13:00",
+                "wednesdayTime": "7:00 - 17:00",
+                "wednesdayTimeBreak": "12:00 - 13:00",
+                "thursdayTime": "7:00 - 17:00",
+                "thursdayTimeBreak": "12:00 - 13:00",
+                "fridayTime": "7:00 - 17:00",
+                "fridayTimeBreak": "12:00 - 13:00",
+                "saturdayTime": "7:00 - 17:00",
+                "saturdayTimeBreak": "12:00 - 13:00",
+                "sundayTime": "7:00 - 17:00",
+                "sundayTimeBreak": "12:00 - 13:00"
+            }
+        },
+      ];
     }
   }
 };

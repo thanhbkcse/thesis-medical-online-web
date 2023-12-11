@@ -370,8 +370,13 @@ export default {
   },
   async created() {
     this.getProvines();
-    await this.getListDoctor();
-    await this.getSpecialties();
+     if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+      this.logindev();
+    }
+    else{
+      await this.getListDoctor();
+      await this.getSpecialties();
+    }
     this.loading = false;
   },
   watch: {
@@ -513,6 +518,118 @@ export default {
     },
     get_text_price(price) {
       return price.toLocaleString().replaceAll(",", ".");
+    },
+    logindev(){
+      this.listDoctor = [
+        {
+            "id":"1",
+            "phone": "123456211",
+            "imageUrl": null,
+            "name": "Đỗ Hồng Việt",
+            "hospital":{
+              "name":"Bệnh viện hữu nghị Việt Đức",
+              "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+              },
+            },
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "gender": "MALE",
+            "dob": "2022-11-06",
+            "email": "a@gmail.com",
+            "specialty": "Chuẩn Đoán Hình Ảnh",
+            "level": "CKII",
+            "hospitalId": "e2940ab0-e2f7-4887-98d4-b04bf2b32f3b",
+            "price": "10000",
+            "bio": ""
+        },
+        {
+            "id":"2",
+            "phone": "123456211",
+            "imageUrl": null,
+            "name": "Đỗ Hồng Việt",
+            "hospital":{
+              "name":"Bệnh viện hữu nghị Việt Đức",
+              "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+              },
+            },
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "gender": "MALE",
+            "dob": "2022-11-06",
+            "email": "a@gmail.com",
+            "specialty": "Chuẩn Đoán Hình Ảnh",
+            "level": "CKII",
+            "hospitalId": "e2940ab0-e2f7-4887-98d4-b04bf2b32f3b",
+            "price": "10000",
+            "bio": ""
+        },
+        {
+            "id":"3",
+            "phone": "123456211",
+            "imageUrl": null,
+            "name": "Đỗ Hồng Việt",
+            "hospital":{
+              "name":"Bệnh viện hữu nghị Việt Đức",
+              "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+              },
+            },
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "gender": "MALE",
+            "dob": "2022-11-06",
+            "email": "a@gmail.com",
+            "specialty": "Chuẩn Đoán Hình Ảnh",
+            "level": "CKII",
+            "hospitalId": "e2940ab0-e2f7-4887-98d4-b04bf2b32f3b",
+            "price": "10000",
+            "bio": ""
+        },
+        {
+            "id":"4",
+            "phone": "123456211",
+            "imageUrl": null,
+            "name": "Đỗ Hồng Việt",
+            "hospital":{
+              "name":"Bệnh viện hữu nghị Việt Đức",
+              "address": {
+                "id": "dddf1b04-1003-45a0-b67c-42335d72fd82",
+                "country": "Việt Nam",
+                "province": "Thành phố Hà Nội",
+                "district": "Hoàn Kiếm",
+                "ward": "Hàng Bông",
+                "address": "Số 18 Phủ Doãn"
+              },
+            },
+            "registrationNumber": 10,
+            "favorite": 5.0,
+            "gender": "MALE",
+            "dob": "2022-11-06",
+            "email": "a@gmail.com",
+            "specialty": "Chuẩn Đoán Hình Ảnh",
+            "level": "CKII",
+            "hospitalId": "e2940ab0-e2f7-4887-98d4-b04bf2b32f3b",
+            "price": "10000",
+            "bio": ""
+        }
+      ];
     }
   }
 };

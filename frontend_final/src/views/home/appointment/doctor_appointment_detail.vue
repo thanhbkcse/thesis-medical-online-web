@@ -512,11 +512,18 @@ export default {
     Question
   },
   async mounted() {
-    await this.get_doctor_select();
-
+    if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+      this.doctor_info = await this.$store.getters[
+            "appointment/make_appointment_doctor_select"
+          ];
+      this.logindev();
+    }
+    else{
+      await this.get_doctor_select();
+      this.get_doctor_schedule();
+    }
     let currentDate = new Date().toJSON().slice(0, 10);
     this.date_pick = currentDate;
-    this.get_doctor_schedule();
   },
   data() {
     return {
@@ -777,7 +784,60 @@ export default {
     },
     get_text_price(price) {
       return price.toLocaleString().replaceAll(",", ".");
+    },
+    logindev(){
+      this.select_time_menu = false;
+      this.is_loading_schedule = false;
+      let data_result = [
+        {
+            "type": "ONLINE",
+            "times": [
+                "8:00 - 9:00",
+                "9:00 - 10:00",
+                "10:00 - 11:00",
+                "11:00 - 12:00",
+                "13:00 - 14:00",
+                "14:00 - 15:00",
+                "15:00 - 16:00",
+                "16:00 - 17:00",
+
+            ],
+            "room": {
+                "id": "55959ae2-b777-4b34-8b6b-95c2679c24b4"
+            },
+            "numOfAppointmentPerHour": 2
+        }
+      ]
+      data_result.forEach(schedule => {
+          if (schedule.type === "OFFLINE") {
+            if (schedule.times != []) {
+              this.offline.has_schedule = true;
+              this.offline.room = schedule.room;
+            }
+            schedule.times.forEach(time_frame => {
+              if (this.check_is_morning(time_frame)) {
+                this.offline.morning.push(time_frame);
+              } else {
+                this.offline.afternoon.push(time_frame);
+              }
+            });
+          }
+          if (schedule.type === "ONLINE") {
+            if (schedule.times != []) {
+              this.online.has_schedule = true;
+              this.online.room = schedule.room;
+            }
+            schedule.times.forEach(time_frame => {
+              if (this.check_is_morning(time_frame)) {
+                this.online.morning.push(time_frame);
+              } else {
+                this.online.afternoon.push(time_frame);
+              }
+            });
+          }
+        });      
     }
+
   }
 };
 </script>

@@ -81,7 +81,7 @@ const actions = {
     {
       commit("SET_IS_USER", true);
     }
-
+    commit("SET_IS_LOGIN", true);
   },
 
   login({ commit }, params) {
