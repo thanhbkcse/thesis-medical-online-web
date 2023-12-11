@@ -64,6 +64,26 @@ const mutations = {
 };
 
 const actions = {
+  login_dev({commit }, params){
+    if(params.username === "superadmin")
+    {
+      commit("SET_IS_ADMIN", true);
+    }
+    if(params.username === "hospitaladmin")
+    {
+      commit("SET_IS_HOSPITAL_ADMIN", true);
+    }
+    if(params.username === "doctor")
+    {
+      commit("SET_IS_DOCTOR", true);
+    }
+    if(params.username === "user")
+    {
+      commit("SET_IS_USER", true);
+    }
+
+  },
+
   login({ commit }, params) {
     return service.login(params).then(({ data }) => {
       if (data.access_token != null && data.access_token != "") {

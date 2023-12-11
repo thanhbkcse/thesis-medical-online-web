@@ -1166,6 +1166,32 @@ export default {
       if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
         this.login_dialog = false;
         this.is_login = true;
+        const user = {
+          username: this.user.username,
+          password: this.user.password
+        };
+        await this.$store.dispatch("auth/login_dev", user);
+        if(this.user.username === "user")
+        {
+          this.$store.dispatch("snackbar/set_snackbar", {
+            text: "Đăng nhập thành công",
+            type: "success"
+          });
+        }
+
+        if(this.user.username === "doctor")
+        {
+          this.$router.push({ name: "Lịch làm việc" });
+        }
+        if(this.user.username === "superadmin")
+        {
+          this.$router.push({ name: "Quản lý bệnh viện" });
+        }
+        if(this.user.username === "hospitaladmin")
+        {
+          this.$router.push({ name: "Quản lý bác sĩ" });
+        }
+
         return;
       }
 
