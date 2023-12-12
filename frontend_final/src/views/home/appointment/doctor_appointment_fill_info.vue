@@ -693,8 +693,14 @@ export default {
       this.book_time.type = time_data.type;
       this.book_time.room = time_data.room;
     }
+
     this.get_doctor_select();
-    this.getProfileList();
+    if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+      this.logindev();
+    }
+    else{
+      this.getProfileList();
+    }
   },
   data() {
     return {
@@ -787,6 +793,15 @@ export default {
     async make_payment() {
       let orderId = new Date().getTime();
       let requestId = new Date().getTime() + "id";
+
+      //Login dev to demo
+      if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+         this.$router.push({
+          path:
+            "/doctor-appointment-booking-success/?paymentType=DIRECT&resultCode=0"
+        });
+      }
+      
       if (this.payment_selection != "DIRECT")
         await this.paymentOnline(orderId, requestId);
       this.createAppointment(orderId, requestId);
@@ -964,6 +979,37 @@ export default {
     },
     get_text_price(price) {
       return price.toLocaleString().replaceAll(",", ".");
+    },
+    logindev(){
+      this.profile_list = [
+        {
+          "id": "9a82f62d-b76c-4059-92d0-6272e47b21ee",
+          "profileNumber": "1025066422997405696",
+          "firstName": "Thanh",
+          "lastName": "Nguyễn Duy",
+          "address": {
+              "id": "db89ce01-084a-4ad7-80ef-1e9e23a60723",
+              "country": "Việt Nam",
+              "province": "Thành phố Hồ Chí Minh",
+              "district": "Quận 3",
+              "ward": "Phường 1",
+              "address": "số 8, đường Kha Vạn Cân"
+          },
+          "phone": "09672367237",
+          "email": "thanhbkcse@gmail.com",
+          "dob": "2000-03-01T00:00:00.000+00:00",
+          "job": "Sinh viên",
+          "identityCard": "077123123000",
+          "healthInsurance": "0123712837128",
+          "folk": "Kinh",
+          "gender": "MALE",
+          "guardian": "Nguyễn Văn A",
+          "guardianPhone": "0129301293",
+          "guardianIdentityCard": "123123123123",
+          "relationship": "Anh",
+          "relationshipWithPatient": "Anh"
+        }
+      ];
     }
   }
 };
