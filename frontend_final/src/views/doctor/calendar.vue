@@ -785,25 +785,65 @@ export default {
       nativeEvent.stopPropagation();
     },
     async updateRange({ start, end }) {
+      if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+        this.doctor_calendar = [
+          {
+              "type": "ONLINE",
+              "date": "2023-12-13",
+              "times": [
+                  "9:00 - 10:00",
+                  "10:00 - 11:00",
+                  "13:00 - 14:00"
+              ],
+              "room": {
+                  "id": "55959ae2-b777-4b34-8b6b-95c2679c24b4"
+              },
+              "numOfAppointmentPerHour": 2
+          },
+          {
+            "type": "ONLINE",
+            "date": "2023-12-12",
+            "times": [
+                "9:00 - 10:00",
+            ],
+            "room": {
+                "id": "55959ae2-b777-4b34-8b6b-95c2679c24b4"
+            },
+            "numOfAppointmentPerHour": 2
+          },
+          {
+            "type": "OFFLINE",
+            "date": "2023-12-12",
+            "times": [
+                "10:00 - 11:00",
+            ],
+            "room": {
+                "id": "55959ae2-b777-4b34-8b6b-95c2679c24b4"
+            },
+            "numOfAppointmentPerHour": 2
+          },      
+        ];
+      }
+      else{
+        let token = this.$store.getters["auth/access_token"];
+  
+        axios.defaults.headers.common = {
+          Authorization: `Bearer ${token}`
+        };
+        const params = {
+          dateStart: start.date,
+          dateEnd: end.date,
+          doctorId: this.userId
+        };
+        await axios
+          .get(`${url}/api/doctor/schedules/date`, {
+            params: params
+          })
+          .then(res => {
+            this.doctor_calendar = res.data.results;
+          });
+      }
       const events = [];
-
-      let token = this.$store.getters["auth/access_token"];
-
-      axios.defaults.headers.common = {
-        Authorization: `Bearer ${token}`
-      };
-      const params = {
-        dateStart: start.date,
-        dateEnd: end.date,
-        doctorId: this.userId
-      };
-      await axios
-        .get(`${url}/api/doctor/schedules/date`, {
-          params: params
-        })
-        .then(res => {
-          this.doctor_calendar = res.data.results;
-        });
       this.doctor_calendar.forEach(calendar => {
         calendar.times.forEach(time => {
           const time_frame = time.split(" - ");

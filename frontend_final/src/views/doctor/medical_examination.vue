@@ -1110,7 +1110,7 @@ export default {
   },
   async mounted() {
     await this.get_appointment();
-    this.fetchMedicines();
+    //this.fetchMedicines();
   },
 
   data() {
@@ -1500,6 +1500,51 @@ export default {
     },
 
     async get_appointment() {
+      if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+          this.list_appointment = [
+          {
+            "id": "1",
+            "date": "2023-12-13",
+            "time": "9:00 - 10:00",
+            "status":"PROCESS",
+            "createdAt":"2023-12-05",
+            "profile":{
+              "lastName":"Nguyễn Duy",
+              "firstName":"Thanh",
+              "dob":"03/03/2000",
+              "phone":"0912378123",
+              "isContactProfile": true,
+            },
+            "category":"DOCTOR",
+            "doctor":{
+              "name":"Nguyễn Duy",
+              "level":"CKII",
+              "specialty":"Xương Khớp",
+              "hospital": {
+                "name":"Bệnh Viện Hữu Nghị Việt Đức"
+              }
+            },
+            "room":{
+              "id":"1",
+              "name":"H1",
+              "link":""
+            },
+            "symptom": "Em chào bác sĩ ạ! Bác sĩ cho e hỏi e có tiền sử lao phổi và điều trị từ 2019 đến đầu năm 2020 là diều trị xong ạ",
+            "type": "ONLINE",
+            "files": [
+                {
+                    "imageUrl": "aaa",
+                    "type": "X_RAY"
+                }
+            ],
+            "fee": "100.000",
+            "isPaid": true,
+          }
+        ];
+        this.totalPages = 1;
+        console.log(this.list_appointment);
+        return;
+      }
       let token = this.$store.getters["auth/access_token"];
       axios.defaults.headers.common = {
         Authorization: `Bearer ${token}`

@@ -189,42 +189,11 @@
 <script>
 export default {
   async mounted() {
-    //Login dev to demo
     if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
-       this.appointment_list = [
-        {
-          "id": "9a82f62d-b76c-4059-92d0-6272e47b21ee",
-          "profileNumber": "1025066422997405696",
-          "firstName": "Thanh",
-          "lastName": "Nguyễn Duy",
-          "address": {
-              "id": "db89ce01-084a-4ad7-80ef-1e9e23a60723",
-              "country": "Việt Nam",
-              "province": "Thành phố Hồ Chí Minh",
-              "district": "Quận 3",
-              "ward": "Phường 1",
-              "address": "số 8, đường Kha Vạn Cân"
-          },
-          "phone": "09672367237",
-          "email": "thanhbkcse@gmail.com",
-          "dob": "2000-03-01T00:00:00.000+00:00",
-          "job": "Sinh viên",
-          "identityCard": "077123123000",
-          "healthInsurance": "0123712837128",
-          "folk": "Kinh",
-          "gender": "MALE",
-          "guardian": "Nguyễn Văn A",
-          "guardianPhone": "0129301293",
-          "guardianIdentityCard": "123123123123",
-          "relationship": "Anh",
-          "relationshipWithPatient": "Anh"
-        }
-      ];
-      this.loading = false;
+      this.logindev();
     }
-    else
-    {
-      //await this.get_appointment_by_user();
+    else{
+      await this.get_appointment_by_user();
     }
   },
   data() {
@@ -245,43 +214,6 @@ export default {
     page: {
       handler() {
         //this.get_appointment_by_user();
-    //Login dev to demo
-        if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
-          this.appointment_list = [
-            {
-              "id": "9a82f62d-b76c-4059-92d0-6272e47b21ee",
-              "profileNumber": "1025066422997405696",
-              "firstName": "Thanh",
-              "lastName": "Nguyễn Duy",
-              "address": {
-                  "id": "db89ce01-084a-4ad7-80ef-1e9e23a60723",
-                  "country": "Việt Nam",
-                  "province": "Thành phố Hồ Chí Minh",
-                  "district": "Quận 3",
-                  "ward": "Phường 1",
-                  "address": "số 8, đường Kha Vạn Cân"
-              },
-              "phone": "09672367237",
-              "email": "thanhbkcse@gmail.com",
-              "dob": "2000-03-01T00:00:00.000+00:00",
-              "job": "Sinh viên",
-              "identityCard": "077123123000",
-              "healthInsurance": "0123712837128",
-              "folk": "Kinh",
-              "gender": "MALE",
-              "guardian": "Nguyễn Văn A",
-              "guardianPhone": "0129301293",
-              "guardianIdentityCard": "123123123123",
-              "relationship": "Anh",
-              "relationshipWithPatient": "Anh"
-            }
-          ];
-          this.loading = false;
-        }
-        else
-        {
-          //this.get_appointment_by_user();
-        }        
       }
     }
   },
@@ -325,6 +257,147 @@ export default {
       ];
       this.totalPages = res.meta?.totalPages;
       this.loading = false;
+    },
+
+    logindev(){
+      this.appointment_list=[
+          {
+            "id": "1",
+            "date": "2023-12-13",
+            "time": "9:00 - 10:00",
+            "status":"PROCESS",
+            "createdAt":"2023-12-05",
+            "profile":{
+              "lastName":"Nguyễn Duy",
+              "firstName":"Thanh",
+              "isContactProfile": true,
+            },
+            "category":"DOCTOR",
+            "doctor":{
+              "name":"Nguyễn Duy",
+              "level":"CKII",
+              "specialty":"Xương Khớp",
+              "hospital": {
+                "name":"Bệnh Viện Hữu Nghị Việt Đức"
+              }
+            },
+            "room":{
+              "name":"H1"
+            },
+            "symptom": "Em chào bác sĩ ạ! Bác sĩ cho e hỏi e có tiền sử lao phổi và điều trị từ 2019 đến đầu năm 2020 là diều trị xong ạ",
+            "type": "ONLINE",
+            "files": [
+                {
+                    "imageUrl": "aaa",
+                    "type": "X_RAY"
+                }
+            ],
+            "fee": "100.000",
+            "isPaid": true,
+          },
+          {
+            "id": "2",
+            "date": "2023-12-13",
+            "time": "9:00 - 10:00",
+            "status":"COMPLETE",
+            "createdAt":"2023-12-05",
+            "profile":{
+              "lastName":"Nguyễn Duy",
+              "firstName":"Thanh",
+              "isContactProfile": true,
+            },
+            "category":"DOCTOR",
+            "doctor":{
+              "name":"Nguyễn Duy",
+              "level":"CKII",
+              "specialty":"Xương Khớp",
+              "hospital": {
+                "name":"Bệnh Viện Hữu Nghị Việt Đức"
+              }
+            },
+            "room":{
+              "name":"H1"
+            },
+            "symptom": "Em chào bác sĩ ạ! Bác sĩ cho e hỏi e có tiền sử lao phổi và điều trị từ 2019 đến đầu năm 2020 là diều trị xong ạ",
+            "type": "ONLINE",
+            "files": [
+                {
+                    "imageUrl": "aaa",
+                    "type": "X_RAY"
+                }
+            ],
+            "fee": "100.000",
+            "isPaid": true,
+          },
+          {
+            "id": "2",
+            "date": "2023-12-13",
+            "time": "9:00 - 10:00",
+            "status":"CANCEL",
+            "createdAt":"2023-12-05",
+            "profile":{
+              "lastName":"Nguyễn Duy",
+              "firstName":"Thanh",
+              "isContactProfile": true,
+            },
+            "category":"DOCTOR",
+            "doctor":{
+              "name":"Nguyễn Duy",
+              "level":"CKII",
+              "specialty":"Xương Khớp",
+              "hospital": {
+                "name":"Bệnh Viện Hữu Nghị Việt Đức"
+              }
+            },
+            "room":{
+              "name":"H1"
+            },
+            "symptom": "Em chào bác sĩ ạ! Bác sĩ cho e hỏi e có tiền sử lao phổi và điều trị từ 2019 đến đầu năm 2020 là diều trị xong ạ",
+            "type": "ONLINE",
+            "files": [
+                {
+                    "imageUrl": "aaa",
+                    "type": "X_RAY"
+                }
+            ],
+            "fee": "100.000",
+            "isPaid": true,
+          },
+          {
+            "id": "2",
+            "date": "2023-12-13",
+            "time": "9:00 - 10:00",
+            "status":"PENDING",
+            "createdAt":"2023-12-05",
+            "profile":{
+              "lastName":"Nguyễn Duy",
+              "firstName":"Thanh",
+              "isContactProfile": true,
+            },
+            "category":"DOCTOR",
+            "doctor":{
+              "name":"Nguyễn Duy",
+              "level":"CKII",
+              "specialty":"Xương Khớp",
+              "hospital": {
+                "name":"Bệnh Viện Hữu Nghị Việt Đức"
+              }
+            },
+            "room":{
+              "name":"H1"
+            },
+            "symptom": "Em chào bác sĩ ạ! Bác sĩ cho e hỏi e có tiền sử lao phổi và điều trị từ 2019 đến đầu năm 2020 là diều trị xong ạ",
+            "type": "ONLINE",
+            "files": [
+                {
+                    "imageUrl": "aaa",
+                    "type": "X_RAY"
+                }
+            ],
+            "fee": "100.000",
+            "isPaid": true,
+          }
+      ];
     }
   }
 };

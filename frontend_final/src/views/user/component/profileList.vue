@@ -288,7 +288,12 @@ export default {
   },
 
   async mounted() {
-    await this.getProfileList();
+     if (process.env.VUE_APP_LOGIN_DEV === "TRUE") {
+        this.logindev();
+     }
+     else{
+       await this.getProfileList();
+     }
   },
   methods: {
     createProfile() {
@@ -356,6 +361,94 @@ export default {
       await this.$store.dispatch("profile/profile_list", param);
       this.loading = false;
       this.profile_list = this.$store.getters["profile/profile_list"];
+    },
+
+    logindev(){
+      this.profile_list = [
+        {
+          "id": "1",
+          "profileNumber": "1025066422997405696",
+          "firstName": "Thanh",
+          "lastName": "Nguyễn Duy",
+          "address": {
+              "id": "db89ce01-084a-4ad7-80ef-1e9e23a60723",
+              "country": "Việt Nam",
+              "province": "Thành phố Hồ Chí Minh",
+              "district": "Quận 3",
+              "ward": "Phường 1",
+              "address": "số 8, đường Kha Vạn Cân"
+          },
+          "phone": "09672367237",
+          "email": "thanhbkcse@gmail.com",
+          "dob": "2000-03-01T00:00:00.000+00:00",
+          "job": "Sinh viên",
+          "identityCard": "077123123000",
+          "healthInsurance": "0123712837128",
+          "folk": "Kinh",
+          "gender": "MALE",
+          "guardian": "Nguyễn Văn A",
+          "guardianPhone": "0129301293",
+          "guardianIdentityCard": "123123123123",
+          "relationship": "Anh",
+          "relationshipWithPatient": "Anh"
+        },
+        {
+          "id": "2",
+          "profileNumber": "1025066422997405696",
+          "firstName": "Thọ",
+          "lastName": "Hà Ngọc",
+          "address": {
+              "id": "db89ce01-084a-4ad7-80ef-1e9e23a60723",
+              "country": "Việt Nam",
+              "province": "Thành phố Hồ Chí Minh",
+              "district": "Quận 3",
+              "ward": "Phường 1",
+              "address": "số 8, đường Kha Vạn Cân"
+          },
+          "phone": "09672367237",
+          "email": "thanhbkcse@gmail.com",
+          "dob": "2000-03-01T00:00:00.000+00:00",
+          "job": "Sinh viên",
+          "identityCard": "077123123000",
+          "healthInsurance": "0123712837128",
+          "folk": "Kinh",
+          "gender": "MALE",
+          "guardian": "Nguyễn Văn A",
+          "guardianPhone": "0129301293",
+          "guardianIdentityCard": "123123123123",
+          "relationship": "Anh",
+          "relationshipWithPatient": "Anh"
+        },
+        {
+          "id": "3",
+          "profileNumber": "1025066422997405696",
+          "firstName": "Thảo",
+          "lastName": "Đinh Thị",
+          "address": {
+              "id": "db89ce01-084a-4ad7-80ef-1e9e23a60723",
+              "country": "Việt Nam",
+              "province": "Thành phố Hồ Chí Minh",
+              "district": "Quận 3",
+              "ward": "Phường 1",
+              "address": "số 8, đường Kha Vạn Cân"
+          },
+          "phone": "09672367237",
+          "email": "thanhbkcse@gmail.com",
+          "dob": "2000-03-01T00:00:00.000+00:00",
+          "job": "Sinh viên",
+          "identityCard": "077123123000",
+          "healthInsurance": "0123712837128",
+          "folk": "Kinh",
+          "gender": "MALE",
+          "guardian": "Nguyễn Văn A",
+          "guardianPhone": "0129301293",
+          "guardianIdentityCard": "123123123123",
+          "relationship": "Anh",
+          "relationshipWithPatient": "Anh"
+        },
+      ];
+
+      this.loading = false;
     }
   }
 };

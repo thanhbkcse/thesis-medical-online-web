@@ -68,18 +68,30 @@ const actions = {
     if(params.username === "superadmin")
     {
       commit("SET_IS_ADMIN", true);
+      commit("SET_IS_HOSPITAL_ADMIN", false);
+      commit("SET_IS_DOCTOR", false);
+      commit("SET_IS_USER", false);
     }
     if(params.username === "hospitaladmin")
     {
       commit("SET_IS_HOSPITAL_ADMIN", true);
+      commit("SET_IS_ADMIN", false);
+      commit("SET_IS_DOCTOR", false);
+      commit("SET_IS_USER", false);
     }
     if(params.username === "doctor")
     {
       commit("SET_IS_DOCTOR", true);
+      commit("SET_IS_ADMIN", false);
+      commit("SET_IS_HOSPITAL_ADMIN", false);
+      commit("SET_IS_USER", false);
     }
     if(params.username === "user")
     {
       commit("SET_IS_USER", true);
+      commit("SET_IS_DOCTOR", false);
+      commit("SET_IS_ADMIN", false);
+      commit("SET_IS_HOSPITAL_ADMIN", false);
     }
     commit("SET_IS_LOGIN", true);
   },
